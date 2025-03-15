@@ -1,0 +1,61 @@
+
+幫我寫一個網頁
+將txt裡面每個單元裡的單字，以小學年二年級的程度，出10個填充題(包含中文翻譯)及1個閱讀測驗(用選擇題方式呈現)，
+每個單元包含一份題目、一份解答、一份單字
+
+主網頁呈現方式:
+[單元名稱] [解答] [單字]
+
+功能: 在主頁面可以點選[單元名稱]、[解答]、[單字]，分別連上考題、解答及單字頁面
+
+[單字]頁面格式如下，
+1. 英文單字 中文翻譯
+   英文例句 中文翻譯
+
+要列出單元內所有英文單字，點選英文單字要能發音，英文例句要換行
+單字之間要空一行
+
+填充題格式如下:
+I went _______ yesterday. (我昨天去滑雪)
+(a) sledding
+(b) skating
+(c) swimming
+
+
+閱讀測驗格式如下:
+
+Yesterday, I went to the beach with my family. We saw a zookeeper with a hat. We played in the sand and swam in the ocean. It was my favorite day.
+
+Where did I go yesterday?
+(a) To the zoo
+(b) To the beach
+(c) To the park
+Who did I see at the beach?
+(a) A teacher
+(b) A student
+(c) A zookeeper
+What did we do in the sand?
+(a) Played
+(b) Studied
+(c) Practiced
+Where did we swim?
+(a) In the pool
+(b) In the ocean
+(c) In the lake
+What was my favorite day?
+(a) Yesterday
+(b) Today
+(c) Tomorrow
+
+
+
+
+
+
+
+
+
+
+參考unit01的題目、解答、單字，新增單元03的測驗、解答、單字頁面，並在主畫面新增連結
+填充題的中文翻譯不需要有空格，
+在閱讀測驗的解答，文章要有中文翻譯

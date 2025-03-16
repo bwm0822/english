@@ -12,3 +12,7 @@ cloud, cloudy, rain, rainy, where, how, what, who
 
 [單元 03]
 spring, summer, fall, winter, season
+
+[單元 04]
+breezy, circus, restaurant, theater, yesterday,
+airport, hospital, library, mall, amusement park

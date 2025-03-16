@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 04 Vocabulary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function pronounce(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            speechSynthesis.speak(utterance);
+            event.preventDefault(); // Prevent the default action
+        }
+
+        function query(word) {
+            window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent(word), '_blank');
+            event.preventDefault(); // Prevent the default action
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Unit 04 Vocabulary</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>英文單字</th>
+                    <th>中文翻譯</th>
+                    <th>[查詢]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. <a href="#" onclick="pronounce('breezy')">breezy</a></td>
+                    <td>涼爽的</td>
+                    <td>[<a href="#" onclick="query('breezy')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">It was a breezy day.<br>那是一個涼爽的日子。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>2. <a href="#" onclick="pronounce('circus')">circus</a></td>
+                    <td>馬戲團</td>
+                    <td>[<a href="#" onclick="query('circus')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We went to the circus.<br>我們去了馬戲團。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>3. <a href="#" onclick="pronounce('restaurant')">restaurant</a></td>
+                    <td>餐廳</td>
+                    <td>[<a href="#" onclick="query('restaurant')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She works at a restaurant.<br>她在餐廳工作。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>4. <a href="#" onclick="pronounce('theater')">theater</a></td>
+                    <td>劇院</td>
+                    <td>[<a href="#" onclick="query('theater')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We watched a movie at the theater.<br>我們在劇院看了一場電影。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>5. <a href="#" onclick="pronounce('yesterday')">yesterday</a></td>
+                    <td>昨天</td>
+                    <td>[<a href="#" onclick="query('yesterday')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">I saw him yesterday.<br>我昨天見到他了。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>6. <a href="#" onclick="pronounce('airport')">airport</a></td>
+                    <td>機場</td>
+                    <td>[<a href="#" onclick="query('airport')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We are going to the airport.<br>我們要去機場。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>7. <a href="#" onclick="pronounce('hospital')">hospital</a></td>
+                    <td>醫院</td>
+                    <td>[<a href="#" onclick="query('hospital')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is a nurse at the hospital.<br>她是醫院的護士。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>8. <a href="#" onclick="pronounce('library')">library</a></td>
+                    <td>圖書館</td>
+                    <td>[<a href="#" onclick="query('library')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We borrowed books from the library.<br>我們從圖書館借了書。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>9. <a href="#" onclick="pronounce('mall')">mall</a></td>
+                    <td>購物中心</td>
+                    <td>[<a href="#" onclick="query('mall')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">They went shopping at the mall.<br>他們去購物中心購物。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>10. <a href="#" onclick="pronounce('amusement park')">amusement park</a></td>
+                    <td>遊樂園</td>
+                    <td>[<a href="#" onclick="query('amusement park')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We had fun at the amusement park.<br>我們在遊樂園玩得很開心。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit 03 Vocabulary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         function pronounce(word) {
             const utterance = new SpeechSynthesisUtterance(word);
@@ -18,57 +22,63 @@
     </script>
 </head>
 <body>
-    <h1>Unit 03 Vocabulary</h1>
-    <table>
-        <tr>
-            <th>英文單字</th>
-            <th>中文翻譯</th>
-            <th>[查詢]</th>
-        </tr>
-        <tr>
-            <td>1. <a href="#" onclick="pronounce('spring')">spring</a></td>
-            <td>春天</td>
-            <td>[<a href="#" onclick="query('spring')">查詢</a>]</td>
-        </tr>
-        <tr>
-            <td colspan="2">Spring is a beautiful season.<br>春天是一個美麗的季節。</td>
-        </tr>
-        <tr><td colspan="2">&nbsp;</td></tr>
-        <tr>
-            <td>2. <a href="#" onclick="pronounce('summer')">summer</a></td>
-            <td>夏天</td>
-            <td>[<a href="#" onclick="query('summer')">查詢</a>]</td>
-        </tr>
-        <tr>
-            <td colspan="2">We go to the beach in summer.<br>我們在夏天去海灘。</td>
-        </tr>
-        <tr><td colspan="2">&nbsp;</td></tr>
-        <tr>
-            <td>3. <a href="#" onclick="pronounce('fall')">fall</a></td>
-            <td>秋天</td>
-            <td>[<a href="#" onclick="query('fall')">查詢</a>]</td>
-        </tr>
-        <tr>
-            <td colspan="2">The leaves fall in fall.<br>葉子在秋天落下。</td>
-        </tr>
-        <tr><td colspan="2">&nbsp;</td></tr>
-        <tr>
-            <td>4. <a href="#" onclick="pronounce('winter')">winter</a></td>
-            <td>冬天</td>
-            <td>[<a href="#" onclick="query('winter')">查詢</a>]</td>
-        </tr>
-        <tr>
-            <td colspan="2">It is very cold in winter.<br>冬天很冷。</td>
-        </tr>
-        <tr><td colspan="2">&nbsp;</td></tr>
-        <tr>
-            <td>5. <a href="#" onclick="pronounce('season')">season</a></td>
-            <td>季節</td>
-            <td>[<a href="#" onclick="query('season')">查詢</a>]</td>
-        </tr>
-        <tr>
-            <td colspan="2">There are four seasons in a year.<br>一年有四個季節。</td>
-        </tr>
+<div class="container">
+    <h1 class="my-4">Unit 03 Vocabulary</h1>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>英文單字</th>
+                <th>中文翻譯</th>
+                <th>[查詢]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. <a href="#" onclick="pronounce('spring')">spring</a></td>
+                <td>春天</td>
+                <td>[<a href="#" onclick="query('spring')">查詢</a>]</td>
+            </tr>
+            <tr>
+                <td colspan="2">Spring is a beautiful season.<br>春天是一個美麗的季節。</td>
+            </tr>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            <tr>
+                <td>2. <a href="#" onclick="pronounce('summer')">summer</a></td>
+                <td>夏天</td>
+                <td>[<a href="#" onclick="query('summer')">查詢</a>]</td>
+            </tr>
+            <tr>
+                <td colspan="2">We go to the beach in summer.<br>我們在夏天去海灘。</td>
+            </tr>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            <tr>
+                <td>3. <a href="#" onclick="pronounce('fall')">fall</a></td>
+                <td>秋天</td>
+                <td>[<a href="#" onclick="query('fall')">查詢</a>]</td>
+            </tr>
+            <tr>
+                <td colspan="2">The leaves fall in fall.<br>葉子在秋天落下。</td>
+            </tr>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            <tr>
+                <td>4. <a href="#" onclick="pronounce('winter')">winter</a></td>
+                <td>冬天</td>
+                <td>[<a href="#" onclick="query('winter')">查詢</a>]</td>
+            </tr>
+            <tr>
+                <td colspan="2">It is very cold in winter.<br>冬天很冷。</td>
+            </tr>
+            <tr><td colspan="2">&nbsp;</td></tr>
+            <tr>
+                <td>5. <a href="#" onclick="pronounce('season')">season</a></td>
+                <td>季節</td>
+                <td>[<a href="#" onclick="query('season')">查詢</a>]</td>
+            </tr>
+            <tr>
+                <td colspan="2">There are four seasons in a year.<br>一年有四個季節。</td>
+            </tr>
+        </tbody>
     </table>
+</div>
 </body>
 </html>

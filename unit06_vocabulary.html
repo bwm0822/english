@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 06 Vocabulary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function pronounce(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            speechSynthesis.speak(utterance);
+            event.preventDefault(); // Prevent the default action
+        }
+
+        function query(word) {
+            window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent(word), '_blank');
+            event.preventDefault(); // Prevent the default action
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Unit 06 Vocabulary</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        英文單字
+                    </th>
+                    <th>
+                        中文翻譯
+                    </th>
+                    <th>
+                        [查詢]
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. <a href="#" onclick="pronounce('there')">there</a></td>
+                    <td>那裡</td>
+                    <td>[<a href="#" onclick="query('there')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The store is there.<br>商店在那裡。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>2. <a href="#" onclick="pronounce('these')">these</a></td>
+                    <td>這些</td>
+                    <td>[<a href="#" onclick="query('these')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">These are my friends.<br>這些是我的朋友。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>3. <a href="#" onclick="pronounce('those')">those</a></td>
+                    <td>那些</td>
+                    <td>[<a href="#" onclick="query('those')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Those books are mine.<br>那些書是我的。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>4. <a href="#" onclick="pronounce('far')">far</a></td>
+                    <td>遠</td>
+                    <td>[<a href="#" onclick="query('far')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The store is far.<br>商店很遠。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>5. <a href="#" onclick="pronounce('near')">near</a></td>
+                    <td>近</td>
+                    <td>[<a href="#" onclick="query('near')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The park is near.<br>公園很近。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>6. <a href="#" onclick="pronounce('here')">here</a></td>
+                    <td>這裡</td>
+                    <td>[<a href="#" onclick="query('here')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The park is here.<br>公園在這裡。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>7. <a href="#" onclick="pronounce('where')">where</a></td>
+                    <td>哪裡</td>
+                    <td>[<a href="#" onclick="query('where')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Where is the library?<br>圖書館在哪裡？</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>8. <a href="#" onclick="pronounce('how')">how</a></td>
+                    <td>怎麼</td>
+                    <td>[<a href="#" onclick="query('how')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">How are you?<br>你好嗎？</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>9. <a href="#" onclick="pronounce('what')">what</a></td>
+                    <td>什麼</td>
+                    <td>[<a href="#" onclick="query('what')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">What is your name?<br>你叫什麼名字？</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>10. <a href="#" onclick="pronounce('who')">who</a></td>
+                    <td>誰</td>
+                    <td>[<a href="#" onclick="query('who')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Who are you?<br>你是誰？</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>11. <a href="#" onclick="pronounce('which')">which</a></td>
+                    <td>哪一個</td>
+                    <td>[<a href="#" onclick="query('which')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Which is your favorite book?<br>哪一本是你最喜歡的書？</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -10,6 +10,11 @@
             speechSynthesis.speak(utterance);
             event.preventDefault(); // Prevent the default action
         }
+
+        function query(word) {
+            window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent(word), '_blank');
+            event.preventDefault(); // Prevent the default action
+        }
     </script>
 </head>
 <body>
@@ -23,7 +28,7 @@
         <tr>
             <td>1. <a href="#" onclick="pronounce('spring')">spring</a></td>
             <td>春天</td>
-            <td>[<a href="#" onclick="window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent('spring'), '_blank'); return false;">查詢</a>]</td>
+            <td>[<a href="#" onclick="query('spring')">查詢</a>]</td>
         </tr>
         <tr>
             <td colspan="2">Spring is a beautiful season.<br>春天是一個美麗的季節。</td>
@@ -32,7 +37,7 @@
         <tr>
             <td>2. <a href="#" onclick="pronounce('summer')">summer</a></td>
             <td>夏天</td>
-            <td>[<a href="#" onclick="window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent('summer'), '_blank'); return false;">查詢</a>]</td>
+            <td>[<a href="#" onclick="query('summer')">查詢</a>]</td>
         </tr>
         <tr>
             <td colspan="2">We go to the beach in summer.<br>我們在夏天去海灘。</td>
@@ -41,7 +46,7 @@
         <tr>
             <td>3. <a href="#" onclick="pronounce('fall')">fall</a></td>
             <td>秋天</td>
-            <td>[<a href="#" onclick="window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent('fall'), '_blank'); return false;">查詢</a>]</td>
+            <td>[<a href="#" onclick="query('fall')">查詢</a>]</td>
         </tr>
         <tr>
             <td colspan="2">The leaves fall in fall.<br>葉子在秋天落下。</td>
@@ -50,7 +55,7 @@
         <tr>
             <td>4. <a href="#" onclick="pronounce('winter')">winter</a></td>
             <td>冬天</td>
-            <td>[<a href="#" onclick="window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent('winter'), '_blank'); return false;">查詢</a>]</td>
+            <td>[<a href="#" onclick="query('winter')">查詢</a>]</td>
         </tr>
         <tr>
             <td colspan="2">It is very cold in winter.<br>冬天很冷。</td>
@@ -59,7 +64,7 @@
         <tr>
             <td>5. <a href="#" onclick="pronounce('season')">season</a></td>
             <td>季節</td>
-            <td>[<a href="#" onclick="window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent('season'), '_blank'); return false;">查詢</a>]</td>
+            <td>[<a href="#" onclick="query('season')">查詢</a>]</td>
         </tr>
         <tr>
             <td colspan="2">There are four seasons in a year.<br>一年有四個季節。</td>

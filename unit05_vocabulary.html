@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 05 Vocabulary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function pronounce(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            speechSynthesis.speak(utterance);
+            event.preventDefault(); // Prevent the default action
+        }
+
+        function query(word) {
+            window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent(word), '_blank');
+            event.preventDefault(); // Prevent the default action
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Unit 05 Vocabulary</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>英文單字</th>
+                    <th>中文翻譯</th>
+                    <th>[查詢]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. <a href="#" onclick="pronounce('nest')">nest</a></td>
+                    <td>巢</td>
+                    <td>[<a href="#" onclick="query('nest')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The bird built a nest in the tree.<br>鳥在樹上築了一個巢。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>2. <a href="#" onclick="pronounce('sloth')">sloth</a></td>
+                    <td>樹懶</td>
+                    <td>[<a href="#" onclick="query('sloth')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The sloth is very slow.<br>樹懶動作很慢。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>3. <a href="#" onclick="pronounce('popcorn')">popcorn</a></td>
+                    <td>爆米花</td>
+                    <td>[<a href="#" onclick="query('popcorn')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We ate popcorn at the movie theater.<br>我們在電影院吃了爆米花。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>4. <a href="#" onclick="pronounce('snail')">snail</a></td>
+                    <td>蝸牛</td>
+                    <td>[<a href="#" onclick="query('snail')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The snail left a trail of slime.<br>蝸牛留下了一條黏液痕跡。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>5. <a href="#" onclick="pronounce('bite')">bite</a></td>
+                    <td>咬</td>
+                    <td>[<a href="#" onclick="query('bite')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The dog likes to bite the toy.<br>狗喜歡咬玩具。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>6. <a href="#" onclick="pronounce('pet')">pet</a></td>
+                    <td>寵物</td>
+                    <td>[<a href="#" onclick="query('pet')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She has a cute pet.<br>她有一隻可愛的寵物。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>7. <a href="#" onclick="pronounce('snowflake')">snowflake</a></td>
+                    <td>雪花</td>
+                    <td>[<a href="#" onclick="query('snowflake')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We saw a snowflake fall from the sky.<br>我們看到一片雪花從天而降。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>8. <a href="#" onclick="pronounce('roller skating')">roller skating</a></td>
+                    <td>溜冰</td>
+                    <td>[<a href="#" onclick="query('roller skating')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">They went roller skating last weekend.<br>他們上週末去溜冰了。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>9. <a href="#" onclick="pronounce('ice skating')">ice skating</a></td>
+                    <td>滑冰</td>
+                    <td>[<a href="#" onclick="query('ice skating')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She enjoys ice skating in the park.<br>她喜歡在公園裡滑冰。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>10. <a href="#" onclick="pronounce('branch')">branch</a></td>
+                    <td>樹枝</td>
+                    <td>[<a href="#" onclick="query('branch')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The tree has a strong branch.<br>這棵樹有一根堅固的樹枝。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

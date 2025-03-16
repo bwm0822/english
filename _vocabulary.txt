@@ -16,3 +16,7 @@ spring, summer, fall, winter, season
 [單元 04]
 breezy, circus, restaurant, theater, yesterday,
 airport, hospital, library, mall, amusement park
+
+[單元 05]
+nest, sloth, popcorn, snail, bite, pet, snowflake,
+roller skating, ice skating, branch

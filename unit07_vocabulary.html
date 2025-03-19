@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 07 Vocabulary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function pronounce(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            speechSynthesis.speak(utterance);
+            event.preventDefault(); // Prevent the default action
+        }
+
+        function query(word) {
+            window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent(word), '_blank');
+            event.preventDefault(); // Prevent the default action
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Unit 07 Vocabulary</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>英文單字</th>
+                    <th>中文翻譯</th>
+                    <th>[查詢]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. <a href="#" onclick="pronounce('bathroom')">bathroom</a></td>
+                    <td>浴室</td>
+                    <td>[<a href="#" onclick="query('bathroom')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is cleaning the bathroom.<br>她在打掃浴室。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>2. <a href="#" onclick="pronounce('bedroom')">bedroom</a></td>
+                    <td>臥室</td>
+                    <td>[<a href="#" onclick="query('bedroom')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">He is sleeping in the bedroom.<br>他在臥室裡睡覺。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>3. <a href="#" onclick="pronounce('dining room')">dining room</a></td>
+                    <td>餐廳</td>
+                    <td>[<a href="#" onclick="query('dining room')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We eat in the dining room.<br>我們在餐廳吃飯。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>4. <a href="#" onclick="pronounce('garage')">garage</a></td>
+                    <td>車庫</td>
+                    <td>[<a href="#" onclick="query('garage')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The car is in the garage.<br>車在車庫裡。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>5. <a href="#" onclick="pronounce('kitchen')">kitchen</a></td>
+                    <td>廚房</td>
+                    <td>[<a href="#" onclick="query('kitchen')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is cooking in the kitchen.<br>她在廚房裡做飯。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>6. <a href="#" onclick="pronounce('bathtub')">bathtub</a></td>
+                    <td>浴缸</td>
+                    <td>[<a href="#" onclick="query('bathtub')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is taking a bath in the bathtub.<br>她在浴缸裡洗澡。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>7. <a href="#" onclick="pronounce('dining table')">dining table</a></td>
+                    <td>餐桌</td>
+                    <td>[<a href="#" onclick="query('dining table')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We eat at the dining table.<br>我們在餐桌上吃飯。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>8. <a href="#" onclick="pronounce('dining chair')">dining chair</a></td>
+                    <td>餐椅</td>
+                    <td>[<a href="#" onclick="query('dining chair')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is sitting on the dining chair.<br>她坐在餐椅上。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>9. <a href="#" onclick="pronounce('refrigerator')">refrigerator</a></td>
+                    <td>冰箱</td>
+                    <td>[<a href="#" onclick="query('refrigerator')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The refrigerator is in the kitchen.<br>冰箱在廚房裡。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>10. <a href="#" onclick="pronounce('fridge')">fridge</a></td>
+                    <td>冰箱</td>
+                    <td>[<a href="#" onclick="query('fridge')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">The fridge is cold.<br>冰箱是冷的。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

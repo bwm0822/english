@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 08 Vocabulary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function pronounce(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            speechSynthesis.speak(utterance);
+            event.preventDefault(); // Prevent the default action
+        }
+
+        function query(word) {
+            window.open('https://translate.google.com/?sl=en&tl=zh-TW&text=' + encodeURIComponent(word), '_blank');
+            event.preventDefault(); // Prevent the default action
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Unit 08 Vocabulary</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>英文單字</th>
+                    <th>中文翻譯</th>
+                    <th>[查詢]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. <a href="#" onclick="pronounce('scooter')">scooter</a></td>
+                    <td>滑板車</td>
+                    <td>[<a href="#" onclick="query('scooter')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">He is riding a scooter.<br>他在騎滑板車。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>2. <a href="#" onclick="pronounce('look for')">look for</a></td>
+                    <td>尋找</td>
+                    <td>[<a href="#" onclick="query('look for')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is looking for her fork.<br>她在找她的叉子。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>3. <a href="#" onclick="pronounce('find')">find</a></td>
+                    <td>找到</td>
+                    <td>[<a href="#" onclick="query('find')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">I hope to find a new job.<br>我希望找到一份新工作。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>4. <a href="#" onclick="pronounce('hope')">hope</a></td>
+                    <td>希望</td>
+                    <td>[<a href="#" onclick="query('hope')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She hopes to find her keys.<br>她希望找到她的鑰匙。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>5. <a href="#" onclick="pronounce('toilet')">toilet</a></td>
+                    <td>廁所</td>
+                    <td>[<a href="#" onclick="query('toilet')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">I need to use the toilet.<br>我需要用廁所。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>6. <a href="#" onclick="pronounce('sink')">sink</a></td>
+                    <td>水槽</td>
+                    <td>[<a href="#" onclick="query('sink')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We need to clean the sink.<br>我們需要清理水槽。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>7. <a href="#" onclick="pronounce('fork')">fork</a></td>
+                    <td>叉子</td>
+                    <td>[<a href="#" onclick="query('fork')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">She is looking for her fork.<br>她在找她的叉子。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>8. <a href="#" onclick="pronounce('spoon')">spoon</a></td>
+                    <td>湯匙</td>
+                    <td>[<a href="#" onclick="query('spoon')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">We need a spoon to eat soup.<br>我們需要一個湯匙來喝湯。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>9. <a href="#" onclick="pronounce('plate')">plate</a></td>
+                    <td>盤子</td>
+                    <td>[<a href="#" onclick="query('plate')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">He found his plate in the kitchen.<br>他在廚房找到了他的盤子。</td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr>
+                    <td>10. <a href="#" onclick="pronounce('living room')">living room</a></td>
+                    <td>客廳</td>
+                    <td>[<a href="#" onclick="query('living room')">查詢</a>]</td>
+                </tr>
+                <tr>
+                    <td colspan="2">They are playing in the living room.<br>他們在客廳玩耍。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

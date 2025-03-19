@@ -24,3 +24,12 @@ roller skating, ice skating, branch
 [單元 06]
 there, these, those, far, near, here, where,
 how, what, who, which
+
+[單元 07]
+bathroom, bedroom, dining room, garage, kitchen,
+bathtub, dining table, dining chair, refrigerator,
+fridge
+
+[單元 08]
+scooter, look for, find, hope, toilet, sink 水槽,
+fork, spoon, plate, living room
